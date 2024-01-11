@@ -94,6 +94,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/",(req,res)=>{
+    res.send("Hii")
+})
+
 // Your other routes and middleware go here
 
 const port = process.env.PORT || 3000;
